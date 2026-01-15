@@ -78,7 +78,7 @@ def main() -> None:
     data_path = Path("data/synthetic_field_multispec.csv")
 
     def regenerate() -> None:
-        records_new = generate_spectral_grid(rows=140, cols=140, seed=2027)
+        records_new = generate_spectral_grid(rows=140, cols=140, seed=114514)
         save_records_csv(records_new, data_path)
         print(f"Generated synthetic dataset at {data_path}")
 
